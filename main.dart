@@ -1,13 +1,17 @@
 void main() {
-int score = 84;
 
-if (score >= 90){
-print("이 학생의 점수는 $score점 이며, 등급은 A등급 입니다!");
-}
-else if (score >= 80){
-print("이 학생의 점수는 $score점 이며, 등급은 B등급 입니다!");
-}
+var cart = ["티셔츠", "바지", "모자", "티셔츠", "바지"];
+int a = 10000;
+String t = "티셔츠";
+int b = 8000;
+String i = "바지";
+int c = 4000;
+String r = "모자";
+int v = (a + b + c + a + b);
 
-else {print("이 학생의 점수는 $score점 이며, 등급은 C등급 입니다!");
-}
+print("장바구니에 [$v]원 어치를 담으셨네요!");
+c %= v;
+print("할인금액$c원");
+v -= c;
+print("최종적으로 결제하실 금액은 $v원입니다!");
 }
